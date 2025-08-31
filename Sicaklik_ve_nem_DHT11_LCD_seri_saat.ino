@@ -25,7 +25,7 @@ void setup() {
   // saniye, dakika, saat, gün (1=PAZAR), tarih, ay, yıl
 
   lcd.setCursor(0, 0);
-  lcd.print("DHT11 + RTC+ Saat");
+  lcd.print("DHT11+RTC+Saat");
   delay(2000);
   lcd.clear();
 }
