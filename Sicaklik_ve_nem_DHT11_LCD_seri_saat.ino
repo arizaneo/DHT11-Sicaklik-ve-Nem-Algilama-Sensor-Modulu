@@ -25,7 +25,7 @@ void setup() {
   // saniye, dakika, saat, gün (1=PAZAR), tarih, ay, yıl
 
   lcd.setCursor(0, 0);
-  lcd.print("DHT11 + RTC");
+  lcd.print("DHT11 + RTC+ Saat");
   delay(2000);
   lcd.clear();
 }
@@ -59,11 +59,11 @@ void loop() {
   lcd.print("C");
 
   // --- Seri Monitör (Tarih / Saat ile Log) ---
-  Serial.print(myRTC.year);
+  Serial.print(myRTC.dayofmonth);
   Serial.print("-");
   Serial.print(myRTC.month);
   Serial.print("-");
-  Serial.print(myRTC.dayofmonth);
+  Serial.print(myRTC.year);
   Serial.print(" ");
   Serial.print(myRTC.hours);
   Serial.print(":");
